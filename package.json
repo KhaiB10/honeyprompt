@@ -1,15 +1,40 @@
 {
-  "name": "honeyprompt",
+  "name": "@khaib10/honeyprompt",
   "version": "1.0.0",
   "description": "Does your AI agent obey instructions hidden in what it reads? Canary documents, a one-command test for any OpenAI-compatible model, and a scanner for your logs.",
   "type": "module",
-  "bin": { "honeyprompt": "bin/honeyprompt.js" },
+  "bin": {
+    "honeyprompt": "bin/honeyprompt.js"
+  },
   "main": "src/run.js",
-  "files": ["bin", "src", "README.md", "LICENSE"],
-  "engines": { "node": ">=18.17" },
-  "scripts": { "test": "node --test test/*.test.js" },
-  "keywords": ["prompt-injection", "llm", "security", "agents", "canary", "ollama", "red-team"],
-  "repository": { "type": "git", "url": "git+https://github.com/KhaiB10/honeyprompt.git" },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.17"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "prompt-injection",
+    "llm",
+    "security",
+    "agents",
+    "canary",
+    "ollama",
+    "red-team"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KhaiB10/honeyprompt.git"
+  },
   "author": "Khai Bustos",
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
 }
